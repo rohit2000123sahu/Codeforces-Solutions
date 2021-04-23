@@ -76,17 +76,18 @@ int main()
     // If some odd element is present then removing it we are done
     // And if all even elements are there then we divide the elements on both the side by 2 until we find the any odd element.
     // By doing this we are just scaling the sum down.
-    // Hence we need to find the element having its set bit at the earliest position.
-    // below given is the implementation for this.
+    // Hence we need to find the first set bit of all elements and try to find the minimum position among all
+    // It is because when we start dividing it by 2 the element having minimum position set bit will not allow the array to be get divided into two equal sum
+    // Below given is the implementation for this.
 
-    ll pos=33;
+    ll pos=33;      // Initiallly we have set the position to the max i.e. 33 or some larger value than this
     ll index=-1;
 
     for(i=0;i<n;i++){
         ll temp=a[i];
         ll cnt=0;
         while(temp!=0){
-            if(temp&1){
+            if(temp&1){     // If it is a set bit then break the loop
                 break;
             }
             cnt++;
