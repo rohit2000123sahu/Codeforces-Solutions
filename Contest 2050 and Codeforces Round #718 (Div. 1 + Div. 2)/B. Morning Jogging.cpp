@@ -42,15 +42,15 @@ int main()
             }
         }
 
-        sort(vect.begin(),vect.end());
+        sort(vect.begin(),vect.end());      // We will insert all the values in the vector and sort in the ascending order
 
-        set< pair< ll ,ll > >s;     
+        set< pair< ll ,ll > >s;         
 
-        for(i=0;i<m;i++){             // Our answer is th first m values and rest is the implementation
+        for(i=0;i<m;i++){             // As we need to find the minimum answer therefore we need to take the first m smallest values and will arrange each of them in every column
             s.insert(mp(vect[i],i));
         }
 
-        bool done[m];
+        bool done[m];                   // This representing which column has assigned the minimum value 
 
         memset(done,false,sizeof(done));
 
@@ -62,13 +62,13 @@ int main()
                 ms.insert(c);
             }
 
-            for(auto c: s){
-                ll val=c.first;
+            for(auto c: s){                     // Now we are just checking if the minimum value is present in this row or not
+                ll val=c.first;                 
                 ll ind=c.second;
 
                 auto itr = ms.find(val);
 
-                if(itr!=ms.end() && !done[ind]){
+                if(itr!=ms.end() && !done[ind]){        // if yes and the column has not been done yet then we will assign this value to it 
                     b[i][ind]=val;
                     ms.erase(itr);
                     done[ind]=true;
@@ -76,7 +76,7 @@ int main()
                 }
             }
 
-            for(j=0;j<m;j++){
+            for(j=0;j<m;j++){                           // After peerforming all the values that are presented we will put the rest of the values in the mat
                 if(!visited[j]){
                     b[i][j]=*ms.begin();
                     visited[j]=true;
@@ -85,8 +85,8 @@ int main()
             }
 
         }
-
-        for(i=0;i<n;i++){
+    
+        for(i=0;i<n;i++){                               // Finally printing the answer
             for(j=0;j<m;j++){
                 cout<<b[i][j]<<" ";
             }
