@@ -34,6 +34,11 @@ int main()
     while(t--){
         ll n,m,k;
         cin>>n>>m>>k;
+        
+        // This problem solution matches with the problem name " Cake is Lie" 
+        // In reality there is always only one value is possible and also that value is not depenedent on the steps that we have taken.
+        // It can also be proved mathematically easily.
+        // Thus we can say the given "Cake is Lie" and answer doesn't depend on this.
 
         if(calc(n,m)==k){
             cout<<"YES"<<endl;
