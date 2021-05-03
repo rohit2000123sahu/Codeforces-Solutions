@@ -43,6 +43,14 @@ int main()
             cin>>st[i];
             sum+=st[i];
         }
+        
+        // The main concept in this problem is that the when the teams will be divided in the a particular size then some of the part will be remained and we nned to remoe that sum
+        // from the total.
+        
+        // Rest is the implementation part.
+        
+        // One more thing is that the code complexity looks like O(n2) but it is O(nlogn).
+        // It is because we have made the data segregated.
 
         for(i=0;i<n;i++){
             m[uni[i]].pb(st[i]);
@@ -51,25 +59,11 @@ int main()
         set< ll > left;
 
         for(auto c: m){
-            left.insert(c.first);
-            // vl new_temp;
-            // for(auto d:c.second){
-            //     new_temp.pb(d);
-            // }
-
-            // sort(all(new_temp));
+            left.insert(c.first);    
 
             sort(all(m[c.first]));
             
         }
-
-        // for(auto c: m){
-        //     for(auto d:c.second){
-        //         cout<<d<<" ";
-        //     }
-
-        //     cout<<endl;
-        // }
 
         map< ll , vl > submi;
 
@@ -95,8 +89,6 @@ int main()
                 ll len=(submi[c].size())%(i+1);
                 if(len!=0){
                     temp+=submi[c][len-1];
-                    // cout<<len<<endl;
-                    // cout<<submi[c][len-1]<<endl;
                 }
 
                 if(i+1==submi[c].size()){
@@ -120,16 +112,6 @@ int main()
 
         cout<<endl;
 
-
-
-        
-
-
-
-
-
-
-        
     }
 
     return 0;
