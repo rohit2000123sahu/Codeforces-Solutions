@@ -28,6 +28,10 @@ int main()
     while(t--){
         ll n;
         cin>>n;
+        
+        // From our algo we will get the answer for each n value except for n=2.
+        // So we have done this explicity
+        // And after generating matrix we are not checking whether it is valid or not valid becuase our algo will always produce the valid matrix
 
         if(n==1){
             cout<<1<<endl;
