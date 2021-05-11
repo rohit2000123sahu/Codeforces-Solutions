@@ -32,19 +32,19 @@ int main()
         string s;
         cin>>s;
 
-        if(n==1){
+        if(n==1){                       //Corner Case
             cout<<0<<endl;
             continue;
         }
 
-        ll pre[n+2]={0};
-        ll suf[n+2]={0};
+        ll pre[n+2]={0};                // We will calculate the cost of moving all the sheeps at ith position starting from prefix 
+        ll suf[n+2]={0};                // and also starting from suffix
 
         ll cnt=0;
 
         ll val=0;
         ll i;
-        for(i=1;i<=n;i++){
+        for(i=1;i<=n;i++){              // Using this loop we will calculate it
             if(s[i-1]=='*'){
                 pre[i]=pre[i-1];
                 cnt++;
@@ -68,8 +68,10 @@ int main()
         }
 
         ll ans=1e12;
+          
+        // Our answer would be pre[i]+suf[i+1]
 
-        for(i=1;i<n;i++){
+        for(i=1;i<n;i++){                       // Hence we will loop through and will find the minimum answer
             ans=min(ans,pre[i]+suf[i+1]);
         }
 
