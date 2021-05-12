@@ -31,6 +31,10 @@ int main()
 
           // We will took x as a and y as a*b 
           // z will be sum of x and y
+        
+           // Here we can do small modification as the answer will not exits only when b=1
+           // Otherwise the answer would be the given one
+           // Hence we can remove the last conditions where we are checking whether answers is true or not
       
           ll x=a;
           ll y=a*b;
