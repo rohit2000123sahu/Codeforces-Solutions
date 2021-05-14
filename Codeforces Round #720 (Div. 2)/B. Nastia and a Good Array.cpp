@@ -43,7 +43,7 @@ int main()
             cin>>a[i];
         }
 
-        if(n==1){                   // Special Case don't forget
+        if(n==1){                   // Edge Case don't forget becuase constriants if from n>=1
             cout<<0<<endl;
             continue;
         }
@@ -79,7 +79,7 @@ int main()
 
         cout<<vect.size()<<endl;    // Finally printing the result
 
-        for(auto temp: vect){
+        for(auto temp: vect){       
             for(auto c: temp){
                 cout<<c<<" ";
             }
