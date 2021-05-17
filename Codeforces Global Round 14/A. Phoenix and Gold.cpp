@@ -31,6 +31,10 @@ int main()
 
         ll i;
         ll w[n];
+        
+        // Basically in this question we want the prefix sum should never be equal to x.
+        // If sum of all is equal to x then answer is no.
+        // Else answer is yes
 
         ll sum=0;
         for(i=0;i<n;i++){
@@ -45,6 +49,9 @@ int main()
 
         cout<<"YES"<<endl;
         sort(w,w+n,greater< ll >());
+        
+        // We will sort in decreasing order and will check if the first number is greater than x if yes then we got our answer
+        // Else we will try to find the prefix such that its sum is never equal to x and if then we will swap the numbers as shown in implementation
 
         if(w[0]>x){
             for(i=0;i<n;i++){
