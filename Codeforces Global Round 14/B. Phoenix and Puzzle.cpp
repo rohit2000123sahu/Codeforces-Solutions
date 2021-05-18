@@ -16,7 +16,7 @@ typedef unordered_map< ll, ll > uml;
 typedef vector< pl > vpl;
 typedef map< ll, ll > ml;
 
-bool check(ll n ,ll val ){
+bool check(ll n ,ll val ){      // Function to check whether there exists a square using the given number of triangle or not
     if(n%val!=0){         
         return false;
     }
@@ -44,8 +44,8 @@ int main()
             cout<<"NO"<<endl;
             continue;
         }
-        if(check(n,2) || check(n,4)){     // One square could only be formed by using 2 or 4 squares only. It is also shown in the sample input output.
-            cout<<"YES"<<endl;            // Large sqaures will be the square of this small square only.
+        if(check(n,2) || check(n,4)){     // One square could only be formed by using 2 or 4 triangles only. It is also shown in the sample input output.
+            cout<<"YES"<<endl;            // Large sqaures will be made up these small squares only(sqaures using 2 or 4 triangle)
         }else{
             cout<<"NO"<<endl;
         }
