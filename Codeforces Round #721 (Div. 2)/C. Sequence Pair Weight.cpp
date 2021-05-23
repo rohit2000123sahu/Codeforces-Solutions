@@ -39,7 +39,9 @@ int main()
         }     
 
         ll dp[n+1]={0};
-
+        
+        // In this problem the current value depends on the previous + something
+        // That something is figure out on the basis of the pattern
         for(i=1;i<=n;i++){
             ll temp = 0;
             if(m.find(a[i])==m.end()){
