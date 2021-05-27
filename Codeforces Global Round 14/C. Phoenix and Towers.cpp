@@ -60,7 +60,7 @@ int main()
         while (i < n)
         {
             ll j = 0;
-            while (i < n && j < m)
+            while (i < n && j < m)          // First go filling from left to right
             {
                 ans[vect[i].S] = j + 1;
                 j++;
@@ -68,7 +68,7 @@ int main()
             }
 
             j = m - 1;
-            while (i < n && j >= 0)
+            while (i < n && j >= 0)     // Second go filling from right to left
             {
                 ans[vect[i].S] = j + 1;
                 j--;
@@ -76,9 +76,9 @@ int main()
             }
         }
 
-        cout << "YES" << endl;
+        cout << "YES" << endl;        // Answer is always yes
 
-        for (i = 1; i <= n; i++)
+        for (i = 1; i <= n; i++)       // Printing the answer
         {
             cout << ans[i] << " ";
         }
