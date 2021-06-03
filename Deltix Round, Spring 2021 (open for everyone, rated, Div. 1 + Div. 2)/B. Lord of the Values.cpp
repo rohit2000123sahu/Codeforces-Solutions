@@ -19,7 +19,14 @@ typedef map<ll, ll> ml;
 // In this questions n is always even
 // So we can took two numbers x and y
 // Basically we can perform 6 operations in this order to convert them into -x and  -y 
-// The order is 2,1,1,2,1,1
+// The order is 
+// Initial x , y
+// 2       x , y-x
+// 1       y , y-x
+// 1    2y-x , y-x
+// 2    2y-x , -y
+// 1     y-x , -y
+// 1      -x , -y
 
 int main()
 {
