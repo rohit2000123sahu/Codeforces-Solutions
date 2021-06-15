@@ -33,7 +33,7 @@ int main()
         ll n = s.size();
 
         ll ans[n];
-        ans[0] = 0;
+        ans[0] = 1;
 
         ll dp[n][2] = {0};
         if (s[0] == '0')
@@ -106,7 +106,7 @@ int main()
             sum += ans[i];
         }
 
-        cout << sum + 1 << endl;
+        cout << sum << endl;
     }
 
     return 0;
