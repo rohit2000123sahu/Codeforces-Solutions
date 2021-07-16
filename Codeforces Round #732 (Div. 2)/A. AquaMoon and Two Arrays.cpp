@@ -47,7 +47,7 @@ int main()
             sum2 += b[i];
         }
 
-        if (sum1 != sum2)
+        if (sum1 != sum2)           //Base Condition
         {
             cout << -1 << endl;
             continue;
@@ -57,6 +57,8 @@ int main()
         ll j = 0;
 
         vpl vect;
+        
+        //Use two pointer
 
         while (i < n && j < n)
         {
