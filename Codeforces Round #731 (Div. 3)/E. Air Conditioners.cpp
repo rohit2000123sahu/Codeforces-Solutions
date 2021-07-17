@@ -53,6 +53,8 @@ int main()
             q.push({t[i], a[i]});
         }
 
+        // Use BFS but the order will be decided by the lowest first and we will get the final answer
+        // There are some corner cases need to be handle
         while (!q.empty())
         {
             ll temp = q.top().second;
