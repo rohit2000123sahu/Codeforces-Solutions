@@ -24,6 +24,8 @@ int main()
 
     ll T;
     cin >> T;
+    
+    // We have used the bit manipulation to solve this problem
 
     while (T--)
     {
