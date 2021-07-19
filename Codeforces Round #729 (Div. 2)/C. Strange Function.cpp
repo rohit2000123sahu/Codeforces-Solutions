@@ -30,6 +30,7 @@ ll lcm(ll a, ll b)
     return (a / gcd(a, b)) * b;
 }
 
+// In this we will use the simple poperty hcf*lcm=a*b
 int main()
 {
     ios_base::sync_with_stdio(false);
