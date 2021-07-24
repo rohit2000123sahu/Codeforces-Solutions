@@ -27,14 +27,54 @@ int main()
 
     while (T--)
     {
-        ll n, m;
+        ll n, m, i, j;
         cin >> n >> m;
 
-        vector<string> vect;
-        ll i;
+        vector<string> org;
+        vector<string> mod;
 
-        ll a[26] = {0};
+        for (i = 0; i < n; i++)
+        {
+            string temp;
+            cin >> temp;
 
+            org.pb(temp);
+        }
+
+        for (i = 0; i < n - 1; i++)
+        {
+            string temp;
+            cin >> temp;
+
+            mod.pb(temp);
+        }
+
+        string ans = "";
+        for (i = 0; i < m; i++)
+        {
+            ll a[26] = {0};
+            for (j = 0; j < n; j++)
+            {
+                a[org[j][i] - 'a']++;
+            }
+            for (j = 0; j < n - 1; j++)
+            {
+                a[mod[j][i] - 'a']--;
+            }
+
+            for (j = 0; j < 26; j++)
+            {
+                if (a[j] > 0)
+                {
+                    ans += 'a' + j;
+                }
+            }
+        }
+
+        cout << ans << endl;
+
+        // cout << 1 << endl;
+        cout.flush();
     }
 
     return 0;
