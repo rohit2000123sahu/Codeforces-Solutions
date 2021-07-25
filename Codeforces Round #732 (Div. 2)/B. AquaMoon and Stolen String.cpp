@@ -48,7 +48,9 @@ int main()
 
             mod.pb(temp);
         }
-
+        
+        // We will go throguh the each place from 0 to m-1 and we will see the remaining one.
+        // The remaining one is our answer
         string ans = "";
         for (i = 0; i < m; i++)
         {
@@ -72,8 +74,6 @@ int main()
         }
 
         cout << ans << endl;
-
-        // cout << 1 << endl;
         cout.flush();
     }
 
