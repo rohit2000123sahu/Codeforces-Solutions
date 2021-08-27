@@ -24,7 +24,7 @@ ll compute(ll a, ll b)
         dig_a.pb(a % 10);
         a = a / 10;
     }
-    reverse(all(dig_a));
+    reverse(all(dig_a));            // Getting digits of a
 
     vl dig_b;
     while (b != 0)
@@ -32,12 +32,13 @@ ll compute(ll a, ll b)
         dig_b.pb(b % 10);
         b = b / 10;
     }
-    reverse(all(dig_b));
+    reverse(all(dig_b));          // Getting digits of b
 
     ll ans = 0;
 
     ll i = 0, j = 0;
 
+    // Calculating the answer by brute force
     ll n = dig_a.size();
     ll m = dig_b.size();
 
@@ -65,7 +66,7 @@ ll compute(ll a, ll b)
         ans += n - i;
     }
 
-    return ans;
+    return ans;         // Returning the answer
 }
 
 int main()
@@ -81,7 +82,7 @@ int main()
     ll i;
     ll num = 1;
 
-    for (i = 0; i <= 63; i++)
+    for (i = 0; i <= 63; i++)           // Crucial part The upper range should be 63 not 31 because we can go both the ways
     {
         vect.pb(num);
         num = num * 2;
