@@ -82,6 +82,7 @@ int main()
     ll i;
     ll num = 1;
 
+    // It is becuase see, for this we need double digits for this solution work and in worst case it is 2 power 63
     for (i = 0; i <= 63; i++)           // Crucial part The upper range should be 63 not 31 because we can go both the ways
     {
         vect.pb(num);
