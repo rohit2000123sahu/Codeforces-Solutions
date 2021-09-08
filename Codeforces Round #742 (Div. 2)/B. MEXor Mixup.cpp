@@ -16,6 +16,8 @@ typedef unordered_map<ll, ll> uml;
 typedef vector<pl> vpl;
 typedef map<ll, ll> ml;
 
+// We have computed the xor from 1 to n using this method to reduce the time complexity to O(1)
+// Otherwise we will get TLE
 ll compute(ll a)
 {
     if (a % 4 == 0)
