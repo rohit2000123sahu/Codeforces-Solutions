@@ -28,6 +28,9 @@ ll conv(string s)
     return n;
 }
 
+// Key Obsevation in this is th key is propogating by two steps so that sum took and odd and even places are correct.
+// So we will took them as two different numbers.
+
 int main()
 {
     ios_base::sync_with_stdio(false);
