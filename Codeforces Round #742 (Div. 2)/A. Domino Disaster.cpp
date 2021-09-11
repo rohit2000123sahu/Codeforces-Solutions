@@ -34,6 +34,9 @@ int main()
         cin >> s;
 
         string ans;
+        
+        // In the case of LR the answer will be same
+        // Else if U is there then we will add D and If D is there we will add U
 
         for (i = 0; i < n; i++)
         {
