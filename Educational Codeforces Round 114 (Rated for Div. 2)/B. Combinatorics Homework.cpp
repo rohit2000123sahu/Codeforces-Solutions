@@ -45,11 +45,11 @@ int main()
         ll m;
         cin >> m;
 
-        if (a + b + c - 3 < m)
+        if (a + b + c - 3 < m)              // Maximum pair is a+b+c-3 when all a are together, b are together and c are together
         {
             cout << "NO" << endl;
         }
-        else if (m >= a - (b + c + 1))
+        else if (m >= a - (b + c + 1))      // Minimum is when we have alternate a followed by b (c if b exhausted)
         {
             cout << "YES" << endl;
         }
