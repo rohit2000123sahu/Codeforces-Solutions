@@ -43,6 +43,9 @@ int main()
         sort(all(vect));
         ll j;
         ll ans = 0;
+        
+        // In this version we have done it in O(m2) which is permissible in this particular problem. 
+        // We could also reduce its time complexity further
 
         for (i = 0; i < m; i++)
         {
