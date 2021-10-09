@@ -39,21 +39,19 @@ int main()
 
         ll ans = 0;
         sort(a, a + n);
-        ll times = 1;
-        i = n - 1;
-        while (h > 0)
+
+        ans += 2 * (h / (a[n - 1] + a[n - 2]));
+
+        // cout<<ans<<endl;
+        h = h % (a[n - 1] + a[n - 2]);
+
+        if (h > a[n - 1])
         {
-            if (times > 0)
-            {
-                h = h - a[n - 1];
-                times--;
-            }
-            else
-            {
-                h = h - a[n - 2];
-                times++;
-            }
-            ans++;
+            ans += 2;
+        }
+        else if (h > 0)
+        {
+            ans += 1;
         }
 
         cout << ans << endl;
