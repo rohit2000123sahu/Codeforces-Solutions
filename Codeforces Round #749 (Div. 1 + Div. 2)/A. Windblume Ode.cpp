@@ -48,18 +48,10 @@ int main()
         for (i = 0; i < n; i++)
         {
             cin >> a[i];
-            if (a[i] % 2)
-            {
-                even++;
-            }
-            else
-            {
-                odd++;
-            }
             sum += a[i];
         }
 
-        if (isPrime(sum))
+        if (isPrime(sum))       // If sum is prime then we fill find the index of odd element and we will remove it
         {
             ll index = -1;
             for (i = 0; i < n; i++)
@@ -85,7 +77,7 @@ int main()
             }
             cout << endl;
         }
-        else
+        else        // If sum is not prime then print all as our final answer
         {
             cout << n << endl;
             for (i = 0; i < n; i++)
