@@ -29,11 +29,12 @@ int main()
         ll n, k;
         cin >> n >> k;
 
-        ll maximum_transfer = 1;
+        ll maximum_transfer = 1;    // Maximum computers we can update initially we can update only one computer
         
 
         ll ans = 0;
-
+        
+        // Each time we can increase our update capacity by double (maximum upto k)
         while (maximum_transfer < k && n>1)
         {
             n = n - maximum_transfer;
@@ -49,7 +50,8 @@ int main()
             }
         }
         
-        
+        // Once maximum k is reached
+        // We can get answer directly
         if((n-1)%k==0){
             ans+=(n-1)/k;
         }else if(n>1){
