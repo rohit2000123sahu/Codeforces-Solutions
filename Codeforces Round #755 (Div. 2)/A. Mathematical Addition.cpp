@@ -40,6 +40,9 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
+    
+    // Simple mathematics
+    // Solve that equation and you will get the below results
 
     ll t;
     cin >> t;
