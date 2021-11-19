@@ -39,10 +39,12 @@ int main()
         for(i=0;i<n;i++){
             cin>>b[i];
         }
-        
+
+        // Sort both the array
         sort(a,a+n);
         sort(b,b+n);
         
+        // The idea is the elements of b[i] either should be equal to a[i] or b[i]-a[i]=1 so that we could make it equal in one transformation 
         for(i=0;i<n;i++){
             if(b[i]-a[i]==0 || b[i]-a[i]==1){
                 continue;
