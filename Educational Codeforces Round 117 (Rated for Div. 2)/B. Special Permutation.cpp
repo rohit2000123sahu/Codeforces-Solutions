@@ -33,9 +33,13 @@ int main()
         memset(flag, false, sizeof(flag));
 
         ll arr[n + 1];
-
+        
+        // We will go with brute force
+        // Set the first element as a as n/2+1th element as b
         arr[1] = a;
         arr[n / 2 + 1] = b;
+        
+        // Then start filling the array in the reverse order
 
         flag[a] = true;
         flag[b] = true;
@@ -69,6 +73,7 @@ int main()
             i++;
         }
 
+        // Then check if it satisfies our criteria or not
         bool ans = false;
         for (i = 1; i <= n / 2; i++)
         {
