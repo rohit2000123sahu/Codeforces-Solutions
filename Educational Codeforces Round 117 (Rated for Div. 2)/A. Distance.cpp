@@ -28,9 +28,9 @@ int main()
     {
         ll x, y;
         cin >> x >> y;
-        if ((x + y) % 2 == 0)
+        if ((x + y) % 2 == 0) // If sum is not even then anwer is -1
         {
-            if (x % 2 == 0 && y % 2 == 0)
+            if (x % 2 == 0 && y % 2 == 0)   // if both x and y are even
             {
                 cout << x / 2 << " " << y / 2 << endl;
             }
