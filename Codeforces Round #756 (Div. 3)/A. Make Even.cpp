@@ -51,9 +51,13 @@ int main()
        ll n;
        cin>>n;
        
+        // We will see if the number is already even then answer is zero.
        if(n%2==0){
            cout<<0<<endl;
        }else{
+           // Else if no even numbers are present then answer is -1 
+           // If even number is there in the starting only then answer is 1 
+           // Otherwise answer will always be 2
            cout<<find_even(n)<<endl;
        }
        
