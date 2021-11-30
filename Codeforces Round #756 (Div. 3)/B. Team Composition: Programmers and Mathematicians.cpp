@@ -29,14 +29,14 @@ int main()
         ll a, b;
         cin >> a >> b;
 
-        ll maximum_ans = (a + b) / 4;
+        ll maximum_ans = (a + b) / 4; // First we will go for maximum answer that is the maximum number of pairs possible of size 4
 
-        if (a > b)
+        if (a > b)              // Changing the problem such that a<b always
         {
             swap(a, b);
         }
 
-        if (b / 3 > a)
+        if (b / 3 > a)         // Since a is minimum aand b is maximum the maximum number of pairs will get limited to a itself
         {
             maximum_ans = a;
         }
