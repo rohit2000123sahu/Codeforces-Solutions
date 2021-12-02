@@ -39,6 +39,7 @@ int main()
         sort(a, a + n);
         ll ans = 0;
 
+        // We will just select all the values starting from l upto r in increasing order till we have sufficient amount 
         for (i = 0; i < n; i++)
         {
             if (a[i] >= l && a[i] <= r && k >= a[i])
