@@ -50,6 +50,7 @@ int main()
         bool flag = true;
         ans[0] = 0;
 
+        // The main idea is that we will make the haed office at 0 then we will start assiging the minimum positions to the location which is visited most of the times
         ll walk = 0;
         for (auto c : vect)
         {
