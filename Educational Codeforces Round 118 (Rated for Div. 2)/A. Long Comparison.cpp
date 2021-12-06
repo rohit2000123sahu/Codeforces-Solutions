@@ -64,7 +64,7 @@ int main()
         ll l1 = length(x1);
         ll l2 = length(x2);
 
-        if (l1 + p1 > l2 + p2)
+        if (l1 + p1 > l2 + p2)          // Comparing them on the basis of total length
         {
             cout << ">" << endl;
         }
@@ -72,7 +72,7 @@ int main()
         {
             cout << "<" << endl;
         }
-        else
+        else                    // If toatl length are same then we will convert the numbers in the equal length
         {
             if (l1 < l2)
             {
@@ -83,7 +83,7 @@ int main()
                 x2 = x2 * power(10, l1 - l2);
             }
 
-            //cout << x1 << " " << x2 << endl;
+            //Now comparing the number and printing the output
 
             if (x1 == x2)
             {
