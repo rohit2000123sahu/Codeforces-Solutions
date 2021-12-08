@@ -57,9 +57,10 @@ int main()
             cin >> temp;
             vect.pb(temp);
         }
-
-        vl fact;
-        vl rem;
+        
+        // We will go with brute force
+        vl fact;        // It will store the number how many times we can divide it by 2
+        vl rem;         // Store the resulting odd number
         for (i = 0; i < n; i++)
         {
             ll temp = vect[i];
@@ -87,7 +88,7 @@ int main()
 
         ll ans = 0;
 
-        for (i = 0; i < n; i++)
+        for (i = 0; i < n; i++)     // Calculating the answer for each value and then taking maximum of it
         {
             ll temp = vect[i] * power(2, total - fact[i]);
             temp += rem_total - rem[i];
