@@ -38,6 +38,7 @@ int main()
 
         ll size = 1;
         ll cnt = 0;
+        // Simple brute force
         for (i = 0; i < n; i++)
         {
             if (vect[i] == 1 && i > 0 && vect[i - 1] == 1)
@@ -50,12 +51,12 @@ int main()
                 size += 1;
                 cnt = 0;
             }
-            else
+            else            // if it zero then increase the count by 1
             {
                 cnt += 1;
             }
 
-            if (cnt == 2)
+            if (cnt == 2)  // if count becomes 2 then it become dead according to the conditions
             {
                 size = -1;
                 break;
