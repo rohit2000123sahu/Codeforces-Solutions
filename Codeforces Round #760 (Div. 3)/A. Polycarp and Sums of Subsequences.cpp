@@ -33,6 +33,9 @@ int main()
         {
             cin >> vect[i];
         }
+        
+        // The first two numbers will always be the two numbers of the array
+        // The third number is the either the third number or the fourth one
 
         if (vect[0] + vect[1] == vect[2])
         {
