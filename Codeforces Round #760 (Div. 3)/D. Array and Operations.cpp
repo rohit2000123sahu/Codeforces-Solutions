@@ -44,6 +44,8 @@ int main()
         {
             mp[vect[i]]++;
         }
+        
+        // The main idea is that we will select the first 2k greatest elements and will see if there are same elements having count greater than k
 
         ll ans = 0;
         ll maxi = 0;
