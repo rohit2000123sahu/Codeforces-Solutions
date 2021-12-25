@@ -33,6 +33,8 @@ int main()
         ll i = 1;
 
         set<ll> s;
+        
+        // Simply we are going to iterate and will store all the values of cubes and squares in the map so that there are no repeat elements
 
         while (1)
         {
