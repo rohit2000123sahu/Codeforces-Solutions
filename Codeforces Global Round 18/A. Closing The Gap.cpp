@@ -24,6 +24,12 @@ int main()
 
     ll t;
     cin >> t;
+    
+    // Observation 
+    // The answer would always be either 0 or 1
+    // If the total sum is divisible by n then it will be zero because after some finite steps we can make all equal
+    // Else it would be 1
+    
     while (t--)
     {
         ll n;
