@@ -16,7 +16,7 @@ typedef unordered_map<ll, ll> uml;
 typedef vector<pl> vpl;
 typedef map<ll, ll> ml;
 
-bool sum(ll a, ll b, ll c)
+bool sum(ll a, ll b, ll c)      // The sum of two sides equal to the last one
 {
     if (a == b + c || b == a + c || c == a + b)
     {
@@ -25,7 +25,7 @@ bool sum(ll a, ll b, ll c)
     return false;
 }
 
-bool equal(ll a, ll b, ll c)
+bool equal(ll a, ll b, ll c)    // The two sides are equal and the third one is even.
 {
     if (a == b && c % 2 == 0)
     {
@@ -55,7 +55,7 @@ int main()
         ll a, b, c;
         cin >> a >> b >> c;
 
-        if (sum(a, b, c) || equal(a, b, c))
+        if (sum(a, b, c) || equal(a, b, c))    
         {
             cout << "YES" << endl;
         }
