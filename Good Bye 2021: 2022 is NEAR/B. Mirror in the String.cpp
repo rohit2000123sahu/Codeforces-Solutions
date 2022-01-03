@@ -32,15 +32,15 @@ int main()
         string s;
         cin >> s;
 
-        if (n == 1)
+        if (n == 1)         // Corner Case
         {
             cout << s << s << endl;
         }
-        else if (s[0] == s[1])
+        else if (s[0] == s[1])     // Universal Solution
         {
             cout << s[0] << s[0] << endl;
         }
-        else
+        else        // Now we will go for finding the index until the previous character is not smaller then the next one
         {
             ll i;
             ll index = n - 1;
@@ -53,7 +53,7 @@ int main()
                 }
             }
 
-            for (i = 0; i <= index; i++)
+            for (i = 0; i <= index; i++)    // Printing our answer
             {
                 cout << s[i];
             }
