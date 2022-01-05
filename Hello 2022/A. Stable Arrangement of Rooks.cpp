@@ -42,6 +42,8 @@ int main()
 
         ll x = 0;
         ll y = 0;
+        
+        // We will just start from begining and will move +2 in x and +2 in y 
 
         while (x < n && y < n && k > 0)
         {
