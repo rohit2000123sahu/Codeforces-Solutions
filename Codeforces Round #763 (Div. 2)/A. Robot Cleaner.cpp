@@ -21,6 +21,8 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
+    
+    // Brute Force
 
     ll t;
     cin >> t;
@@ -30,7 +32,7 @@ int main()
         cin >> n >> m >> rb >> cb >> rd >> cd;
 
         ll ans = 0;
-        ll dr = 1;
+        ll dr = 1;  // Initial Condition
         ll dc = 1;
         while (1)
         {
