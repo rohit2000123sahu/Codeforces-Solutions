@@ -59,6 +59,9 @@ int main()
         ll rating = n;
 
         vector<ll> q(n);
+        
+        // We will separate liked and disliked songs and sort them in decreasing order.
+        // After that we will assign the rating to the liked one in decreasing one and then to disliked one.
 
         for (i = 0; i < liked.size(); i++)
         {
