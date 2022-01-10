@@ -93,7 +93,7 @@ int main()
             }
         }
 
-        if (ans)
+        if (ans)            // If true then print -1 else print the array
         {
             cout << "-1" << endl;
             continue;
