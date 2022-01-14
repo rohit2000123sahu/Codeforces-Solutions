@@ -36,26 +36,25 @@ int main()
         ll dc = 1;
         while (1)
         {
-            // cout << rb << " " << cb << endl;
-            if (rb == rd || cb == cd)
+            if (rb == rd || cb == cd)       // Final Condition
             {
                 break;
             }
 
-            if (rb == n)
+            if (rb == n)                    // Changing dr to -1
             {
                 dr = -1;
             }
-            else if (rb == 0)
+            else if (rb == 0)               // Changing dr to 1
             {
                 dr = 1;
             }
 
-            if (cb == m)
+            if (cb == m)                    // Changing dc to -1
             {
                 dc = -1;
             }
-            else if (cb == 0)
+            else if (cb == 0)               // Changing dc to 1
             {
                 dc = 1;
             }
