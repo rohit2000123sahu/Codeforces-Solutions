@@ -59,9 +59,9 @@ int main()
                 dc = 1;
             }
 
-            rb += dr;
+            rb += dr;                   // Updating rb and cb
             cb += dc;
-            ans += 1;
+            ans += 1;                   // Incrementing answer by 1
         }
         cout << ans << endl;
     }
