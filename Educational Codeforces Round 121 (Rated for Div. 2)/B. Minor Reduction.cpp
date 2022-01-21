@@ -33,6 +33,11 @@ int main()
         ll n = num.size();
 
         bool done = false;
+        
+        // Simple Approach 
+        // If length is not decreasing i.e. a+b>=10 then we will go for this change 
+        // Else we will go for the change in the first two number i.e. num[0] and num[1] because that will maximize the value of the whole number.
+        // Implementation is shown below.
 
         for (i = n - 2; i >= 0; i--)
         {
