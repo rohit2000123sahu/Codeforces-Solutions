@@ -29,6 +29,7 @@ int main()
         string s;
         cin >> s;
 
+        // Sorting the string will solve our problem and will satisfy our requirement
         sort(s.begin(), s.end());
 
         cout << s << endl;
