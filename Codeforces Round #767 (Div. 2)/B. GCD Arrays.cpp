@@ -31,7 +31,7 @@ int main()
 
         if (k == 0)
         {
-            if (l == r && l != 1)
+            if (l == r && l != 1)   // Corner Case
             {
                 cout << "YES" << endl;
             }
@@ -42,7 +42,7 @@ int main()
         }
         else
         {
-            ll num = (r - l + 1) - (r / 2 - (l - 1) / 2);
+            ll num = (r - l + 1) - (r / 2 - (l - 1) / 2);   // Maximum odd number
 
             if (num <= k)
             {
