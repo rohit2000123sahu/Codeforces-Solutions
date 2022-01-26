@@ -31,6 +31,8 @@ int main()
 
         ll i;
         vector<pair<ll, ll>> softwares(n);
+        
+        // We will go greedy here, will try for the minimum requirement first and will update the RAM accordingly
 
         for (i = 0; i < n; i++)
         {
