@@ -49,6 +49,9 @@ int main()
                 swap(a[i], b[i]);
             }
         }
+        
+        // We will keep the minimum in one array and maximum in other array
+        // Answer will be the multiplication of the maximum in both the array.
 
         cout << *max_element(a.begin(), a.end()) * *max_element(b.begin(), b.end()) << endl;
         ;
