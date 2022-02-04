@@ -45,11 +45,12 @@ int main()
             }
         }
 
+        // If both count are eqaul then we will select the substring of length n-1
         if (one == zero)
         {
             cout << zero - 1 << endl;
         }
-        else
+        else            // Else the minimum number is our answer
         {
             cout << min(zero, one) << endl;
         }
