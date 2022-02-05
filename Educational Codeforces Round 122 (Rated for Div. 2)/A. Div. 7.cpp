@@ -64,6 +64,9 @@ int main()
     ll t;
     cin >> t;
 
+    // Simple Brute force
+    // As the range is in between 10 to 1000 hence we will generate all the possible divisble by 7.
+    // After that we will compare each value and find the answer
     vector<ll> fac_7;
 
     ll i;
