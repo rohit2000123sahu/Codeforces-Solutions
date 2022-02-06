@@ -32,10 +32,11 @@ int main()
         string s;
         cin >> s;
 
+        // These are all the cases where answer would be YES else it will always be NO
         if (s == "1" || s == "0" || s == "10" || s == "01")
         {
             cout << "YES" << endl;
-        }
+        }   
         else
         {
             cout << "NO" << endl;
