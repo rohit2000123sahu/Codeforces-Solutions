@@ -34,6 +34,9 @@ int main()
 
         string t = s;
         reverse(t.begin(), t.end());
+        
+        // Only two different strings are possible if it is not palindrome
+        // If it is palindrome then only one string possible
 
         if (s == t || k == 0)
         {
