@@ -39,6 +39,7 @@ int main()
             sum += vect[i];
         }
 
+        // Simply we will check the sum+x+y if it is divislbe by 2 then Alice else Bob is answer
         if ((sum + x + y) % 2 == 0)
         {
             cout << "Alice" << endl;
