@@ -38,6 +38,8 @@ int main()
 
         vector<ll> sorted = vect;
         sort(sorted.begin(), sorted.end());
+        
+        // If it is already sorted then we will not be able to do it else there could always be a way
 
         if (vect == sorted)
         {
