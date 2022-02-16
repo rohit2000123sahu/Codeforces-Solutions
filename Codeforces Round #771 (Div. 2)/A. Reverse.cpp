@@ -42,6 +42,7 @@ int main()
             i++;
         }
 
+         
         if (i != n + 1)
         {
             ll num = i;
@@ -50,6 +51,7 @@ int main()
                 i++;
             }
 
+            // We will find the position where arr[i] !=i and then we will reverse to make arr[i]==i;
             ll start = num;
             ll j = i;
 
