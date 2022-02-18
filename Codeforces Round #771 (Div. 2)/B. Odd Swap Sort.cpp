@@ -51,6 +51,9 @@ int main()
                 odd.push_back(c);
             }
         }
+        
+        // We can not swap two odd and two even as well
+        // Hence the even numbers should be sorted and as well odd number
 
         vl new_odd = odd;
         vl new_even = even;
