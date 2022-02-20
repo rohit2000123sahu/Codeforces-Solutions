@@ -39,6 +39,8 @@ int main()
 
         bool visited[n + 1];
         memset(visited, false, sizeof(visited));
+        
+        // We will find the number of the segments in the array and that will be our answer
 
         ll ans = 0;
         ll index = 1;
