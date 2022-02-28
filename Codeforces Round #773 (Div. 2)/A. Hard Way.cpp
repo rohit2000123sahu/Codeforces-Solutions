@@ -28,6 +28,10 @@ int main()
     {
         ll x1, y1, x2, y2, x3, y3;
         cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+        
+        // Logic 
+        // So the points lie in the line y=k are not reachable only when the third point is less then the other two points.
+        // i.e. we can say that the traingle is inverse of the general triangle. 
 
         if (y1 == y2 && y3 < y1)
         {
