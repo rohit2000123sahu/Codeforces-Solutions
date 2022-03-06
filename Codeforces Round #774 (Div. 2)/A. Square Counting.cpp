@@ -28,6 +28,9 @@ int main()
     {
         ll n, s;
         cin >> n >> s;
+        
+        // If we select all the n+1 elements as n-1 then also the total sum will not exceed n2.
+        // Hence we can say the number of times sum is greater than n2 that is our answer
 
         cout << s / (n * n) << endl;
     }
