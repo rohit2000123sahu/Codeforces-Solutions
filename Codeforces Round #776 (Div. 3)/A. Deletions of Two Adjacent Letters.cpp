@@ -21,7 +21,7 @@ string solve(string s, char c)
     ll n = s.size();
     ll i;
 
-    for (i = 0; i < n; i++)
+    for (i = 0; i < n; i++)                 // In Simple terms when we found char c then we should have even length on both side so that we could remove them excluding c
     {
         if (s[i] == c && i % 2 == 0)
         {
