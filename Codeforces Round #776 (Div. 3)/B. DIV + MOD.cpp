@@ -29,10 +29,10 @@ int main()
         ll l, r, a;
         cin >> l >> r >> a;
 
-        ll ans = l / a + l % a;
-        ans = max(ans, r / a + r % a);
+        ll ans = l / a + l % a;         
+        ans = max(ans, r / a + r % a);          // Answer from the base case
 
-        ll m = r / a * a - 1;
+        ll m = r / a * a - 1;               
 
         if (m >= l)
         {
