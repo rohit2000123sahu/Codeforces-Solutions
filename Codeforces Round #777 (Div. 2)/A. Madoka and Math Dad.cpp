@@ -22,6 +22,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
+    // To maximize the decimal number and according to the condition we will break the number in the two's and one's.
     ll t;
     cin >> t;
     while (t--)
@@ -44,6 +45,7 @@ int main()
             }
         }
 
+        // After breaking the number we will arrange it such that the given condition i.e. no two consecutive numbers are same.
         string ans;
         if (count_2 >= count_1)
         {
