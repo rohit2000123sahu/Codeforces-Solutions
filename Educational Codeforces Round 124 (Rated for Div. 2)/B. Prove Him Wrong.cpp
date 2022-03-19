@@ -52,18 +52,19 @@ int main()
         pointer++;
     }
 
-    // cout << pointer << endl;
+    // Simply the possible answer is 1,3,9,27 ..........
+    // Hence we will find the maximum possible value for n which is possible
 
     while (t--)
     {
         ll n;
         cin >> n;
 
-        if (n > pointer)
+        if (n > pointer)        // If n is greater than maximum value then answer is no
         {
             cout << "NO" << endl;
         }
-        else
+        else                    // Else answer is yes and we will print that series of 1, 3, 9, 27 ....
         {
             cout << "YES" << endl;
             ll ans = 1;
