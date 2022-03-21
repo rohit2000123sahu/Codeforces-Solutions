@@ -23,26 +23,17 @@ void solve(ll n, ll m)
     {
         string s;
         cin >> s;
-        for (ll j = 0; j < m; j++)
+        for (ll j = 0; j < m; j++)      // Getting the input array
         {
             a[i][j] = s[j] - '0';
         }
     }
 
-    // for (ll i = 0; i < n; i++)
-    // {
-    //     for (ll j = 0; j < m; j++)
-    //     {
-    //         cout << a[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
-
     for (ll i = 0; i < n - 1; i++)
     {
         for (ll j = 0; j < m - 1; j++)
         {
-            ll total = a[i][j] + a[i + 1][j] + a[i][j + 1] + a[i + 1][j + 1];
+            ll total = a[i][j] + a[i + 1][j] + a[i][j + 1] + a[i + 1][j + 1];       // According to the condition if we get the square of 2*2 having three one's then answer is false
             if (total == 3)
             {
                 cout << "NO" << endl;
@@ -51,7 +42,7 @@ void solve(ll n, ll m)
         }
     }
 
-    cout << "YES" << endl;
+    cout << "YES" << endl;      // Otherwise answer is yes
     return;
 }
 
