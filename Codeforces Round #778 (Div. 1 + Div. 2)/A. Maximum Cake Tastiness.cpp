@@ -39,7 +39,7 @@ int main()
 
         sort(all(vect));
 
-        cout << vect[n - 1] + vect[n - 2] << endl;
+        cout << vect[n - 1] + vect[n - 2] << endl;      // Answer is always the sum of the two greatest number
     }
 
     return 0;
