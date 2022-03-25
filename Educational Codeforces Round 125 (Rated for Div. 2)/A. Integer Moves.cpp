@@ -31,11 +31,12 @@ int main()
 
         ll d = x * x + y * y;
         ll ans = 2;
+        ll sr = sqrt(d);
         if (x == 0 && y == 0)
         {
             ans = 0;
         }
-        else if (d == sqrt(d) * sqrt(d))
+        else if (d == sr * sr)
         {
             ans = 1;
         }
