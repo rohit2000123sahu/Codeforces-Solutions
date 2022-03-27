@@ -32,9 +32,12 @@ int main()
         ll i;
         ll ans = 0;
         ll cur = 0;
+        
+        // We will use greedy
+        
         for (i = 0; i < n; i++)
         {
-            if (cur + x <= B)
+            if (cur + x <= B)    // Till when it is possible we will go by adding it, if not possible we will decrement it
             {
                 cur += x;
             }
