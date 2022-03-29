@@ -30,7 +30,8 @@ int main()
         }
 
         sort(all(vect));
-
+        // The good pairs will the index of minimum element and the maximum element.
+        // It could be done in various ways. Here we have done onr of the possible way
         cout << vect[0].second << " " << vect[n - 1].second << endl;
     }
 
