@@ -37,15 +37,15 @@ void solve()
         }
     }
 
-    if (!one_present)
+    if (!one_present)           // If one is not present then we always get it done
     {
         cout << "YES" << endl;
     }
-    else if (!difference_one)
+    else if (!difference_one)   // If the one is present but differnece is not 1 then we can reduce every number to one
     {
         cout << "YES" << endl;
     }
-    else
+    else                        // Else answer is no
     {
         cout << "NO" << endl;
     }
