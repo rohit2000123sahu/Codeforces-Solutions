@@ -32,6 +32,8 @@ void solve()
 
     ll ans = 0;
     ll curr = max_count;
+    // First we will shift the maximum count element to one array and then if we not got the array then we will dulpicate the array
+    // We will repeat the same procedure until we will not get the same array
     while (curr < n)
     {
         if (curr * 2 < n)
