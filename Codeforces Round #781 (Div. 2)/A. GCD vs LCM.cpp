@@ -11,11 +11,12 @@ void solve()
 {
     ll n;
     cin >> n;
-    if (n % 2 == 0)
+    // We have always taken LCM numbers as 1 and 1
+    if (n % 2 == 0)     // if it is even then this could be our answer so that gcd of two odd numbers is always 1
     {
         cout << n - 3 << " " << 1 << " " << 1 << " " << 1 << endl;
     }
-    else
+    else        // Else we can go for the below answer
     {
         cout << (n - 2) / 2 << " " << (n - 2) / 2 + 1 << " " << 1 << " " << 1 << endl;
     }
