@@ -7,7 +7,7 @@ using namespace std;
 #define endl '\n'
 #define MOD 1000000007
 
-ll sum(ll a1, ll a2, ll b1, ll b2)
+ll sum(ll a1, ll a2, ll b1, ll b2)          // Function to calculate the sum
 {
     return abs(a1 - a2) + abs(b1 - b2);
 }
@@ -30,10 +30,10 @@ void solve()
     }
 
     ll ans = 0;
-    for (i = 1; i < n; i++)
+    for (i = 1; i < n; i++)                 // We will go greedy
     {
-        if (sum(a[i - 1], a[i], b[i - 1], b[i]) > sum(a[i - 1], b[i], b[i - 1], a[i]))
-        {
+        if (sum(a[i - 1], a[i], b[i - 1], b[i]) > sum(a[i - 1], b[i], b[i - 1], a[i]))      // If we got the more sum then we will swap a[i] and b[i], 
+        {                                                                                   // swapping does not cause our previous answer change
             swap(a[i], b[i]);
         }
         ans += sum(a[i - 1], a[i], b[i - 1], b[i]);
