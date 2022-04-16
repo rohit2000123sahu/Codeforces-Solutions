@@ -18,6 +18,9 @@ void solve()
         cin >> num;
     }
 
+    // Use greedy over here
+    // Try all the possible combinations
+    // Also the mod value is 2^15
     for (auto num : nums)
     {
         ll ans = 15;
