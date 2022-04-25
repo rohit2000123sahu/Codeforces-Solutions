@@ -27,7 +27,7 @@ void solve()
         {
             r++;
         }
-        else if (i >= 1 && s[i - 1] != 'W')
+        else if (i >= 1 && s[i - 1] != 'W')     // If the prev char is not W then we will check that both r and b count should bre greater than 0 else that sequence is not possible
         {
             if (r == 0 || b == 0)
             {
