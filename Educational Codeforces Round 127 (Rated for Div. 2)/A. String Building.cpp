@@ -15,6 +15,7 @@ void solve()
     ll i;
     ll n = s.size();
     ll count = 1;
+    // If we get the single occurace of any character then we cannot form it else we can form anything
     for (i = 1; i < n; i++)
     {
         if (s[i] == s[i - 1])
@@ -23,7 +24,7 @@ void solve()
         }
         else
         {
-            if (count == 1)
+            if (count == 1)         // We cannot single char
             {
                 cout << "NO" << endl;
                 return;
