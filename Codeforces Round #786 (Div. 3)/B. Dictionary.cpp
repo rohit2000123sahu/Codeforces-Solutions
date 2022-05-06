@@ -21,7 +21,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    map<string, int> dict;
+    map<string, int> dict;      // It is the dictionary that contains all the data
     ll index = 1;
     for (ll i = 0; i < 26; i++)
     {
