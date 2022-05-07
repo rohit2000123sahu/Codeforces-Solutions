@@ -12,12 +12,12 @@ void solve()
     ll x, y;
     cin >> x >> y;
 
-    if (x > y || y % x != 0)
+    if (x > y || y % x != 0)            // If this is the case then we cannot get the answer hence answer is 0 0 
     {
         cout << "0 0" << endl;
         return;
     }
-    cout << 1 << " " << y / x << endl;
+    cout << 1 << " " << y / x << endl;  // Else answer is 1 and y/x
 }
 
 int main()
