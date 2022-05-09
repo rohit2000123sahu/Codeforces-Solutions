@@ -12,11 +12,11 @@ void solve()
     string s, t;
     cin >> s >> t;
 
-    if (t == "a")
+    if (t == "a")               // If we will replace a by a no new string will be made
     {
         cout << 1 << endl;
     }
-    else
+    else                        
     {
         ll count_a = 0;
         for (auto c : t)
@@ -26,11 +26,11 @@ void solve()
                 count_a++;
             }
         }
-        if (count_a != 0)
+        if (count_a != 0)       //If count of a is not zero then we will get infinite number of strings
         {
             cout << "-1" << endl;
         }
-        else
+        else                    // Else answer is 2^(len of string)
         {
             cout << (1 << s.size()) << endl;
         }
