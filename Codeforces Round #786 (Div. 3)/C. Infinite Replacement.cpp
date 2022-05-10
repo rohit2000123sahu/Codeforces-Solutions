@@ -7,6 +7,26 @@ using namespace std;
 #define endl '\n'
 #define MOD 1000000007
 
+ll power(ll a, ll b)
+{
+    if (b == 0)
+    {
+        return 1;
+    }
+    ll temp = power(a, b / 2);
+    ll ans = temp * temp;
+    if (b % 2 == 0)
+    {
+        return ans;
+    }
+    else
+    {
+        ans = ans * a;
+        return ans;
+    }
+}
+
+
 void solve()
 {
     string s, t;
@@ -32,7 +52,7 @@ void solve()
         }
         else                    // Else answer is 2^(len of string)
         {
-            cout << (1 << s.size()) << endl;
+            cout << power(2, s.size()) << endl;
         }
     }
 }
