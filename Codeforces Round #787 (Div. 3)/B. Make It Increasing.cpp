@@ -20,6 +20,7 @@ void solve()
         cin >> vect[i];
     }
 
+    // We will go greedily from back and try to reduce each number minimum times so that given condition holds
     ll ans = 0;
     for (i = n - 2; i >= 0; i--)
     {
