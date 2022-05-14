@@ -12,6 +12,7 @@ void solve()
     ll a, b, c, x, y;
     cin >> a >> b >> c >> x >> y;
 
+    // We will use greedy
     if (x >= a)
     {
         x -= a;
@@ -33,7 +34,11 @@ void solve()
         b -= y;
         y = 0;
     }
+    
+    // We will try to reduce the x and y as much as possible
 
+    // Then we will compare its sum with c and if it is less than or equal to c the answer is c.
+    
     if (x + y <= c)
     {
         cout << "YES" << endl;
